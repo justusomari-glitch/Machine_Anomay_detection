@@ -1,0 +1,11 @@
+venv
+_pycache_
+*.pyc
+*.pyo
+mlruns/
+venv/
+mlartifacts/
+.git/
+__pycache__/
+data/
+*.log
