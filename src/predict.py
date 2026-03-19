@@ -7,9 +7,9 @@ app = FastAPI(title="Anomaly Detection API")
 # Load the trained model
 model = joblib.load('anomaly_model.pkl')   
 
-@app.get("/")
-def home():
-    return {"message": "Welcome to the Anomaly Detection API. Use the /predict endpoint to detect anomalies in machine data."}
+@app.get("/health")
+def health():
+    return {"status": "healthy"}
 
 @app.post("/predict")
 def predict(data: AnomalyDetectionRequest):
