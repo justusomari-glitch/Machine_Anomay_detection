@@ -2,10 +2,10 @@ from fastapi.testclient import TestClient
 from src.predict import app
 client = TestClient(app)
 
-def test_home():
-    response = client.get("/")
+def test_health():
+    response = client.get("/health")
     assert response.status_code == 200
-    assert "message" in response.json()
+    assert "status" in response.json()
 
 def test_predict_route_valid_input():
     payload = {
