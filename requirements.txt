@@ -40,11 +40,14 @@ pytz==2026.1.post1
 referencing==0.37.0
 requests==2.32.5
 rpds-py==0.30.0
+scikit-learn==1.8.0
+scipy==1.17.1
 six==1.17.0
 smmap==5.0.3
 starlette==0.52.1
 streamlit==1.55.0
 tenacity==9.1.4
+threadpoolctl==3.6.0
 toml==0.10.2
 tornado==6.5.5
 typing-inspection==0.4.2
