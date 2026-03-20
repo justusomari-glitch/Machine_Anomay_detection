@@ -7,3 +7,4 @@ mlruns/
 venv/
 .DS_Store
 mlartifacts/
+.streamlit
